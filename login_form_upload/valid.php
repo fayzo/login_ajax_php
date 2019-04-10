@@ -77,21 +77,22 @@ if (isset($_POST['submit'])) {
              $mail->SMTPDebug = 2;
              $mail->Debugoutput = 'html';
              
-             $mail->Host = 'smtp.mail.yahoo.com';
+             $mail->Host = 'smtp.gmail.com';
              $mail->SMTPSecure = 'tls';
              $mail->Port = 587;
              $mail->SMTPAuth = true;
-             $mail->Username = 'shemafaysal@yahoo.com';
-             $mail->Password = 'akarere1';
+             $mail->Username = 'shemafaysal@gmail.com';
+             $mail->Password = 'shemafayzo12';
              
-             $mail->setFrom('shemafaysal@yahoo.com', 'fayzo');
+             $mail->setFrom('shemafaysal@gmail.com', 'SHEMA FAYZO');
              $mail->addAddress($email);
              $mail->Subject = 'SMTP email test';
-             $mail->Body = 'this is some body';
+            //  $mail->Body = 'this is some body';
+             $mail->Body = $fileName;
 
           if ($mail->send()){
             $_SESSION['message'] = "Email Sent";
-            header('Location: indexz.php');
+            // header('Location: indexz.php');
           }else{
                 $_SESSION['message'] = "Email not Sent";
           }
