@@ -1,0 +1,21 @@
+{
+    "name": "login_form_upload",
+    "version": "1.0.0",
+    "description": "",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.1",
+        "phpmailer/phpmailer": "~6.0",
+        "league/oauth2-google": "^3.0",
+        "hayageek/oauth2-yahoo": "^2.0",
+        "psr/log": "^1.1",
+        "stevenmaguire/oauth2-microsoft": "^2.2"
+    },
+    "autoload": {
+         "psr-4": {
+             "App\\": "app/"
+         },
+         "classmap": [
+             "apps/"
+         ]
+    }
+}

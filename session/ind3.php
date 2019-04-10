@@ -1,0 +1,15 @@
+<?php
+session_start();
+echo $_SESSION['name'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content="width=device-width", "initial-scale=1.0">
+	 <link href="/.css" rel="stylesheet">
+</head>
+<body>
+      <a href ='ind2.php'>log_out</a>
+</body>
+</html>
